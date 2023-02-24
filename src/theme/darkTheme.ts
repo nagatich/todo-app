@@ -21,7 +21,7 @@ export default {
     primaryHover: defaultThemeVariables.color.orangeDark,
   },
   bgColor: {
-    base: defaultThemeVariables.color.white,
+    base: defaultThemeVariables.color.black,
     primary: defaultThemeVariables.color.orange,
     primaryPale: defaultThemeVariables.color.orangePale,
     secondary: defaultThemeVariables.color.grey,
@@ -40,6 +40,7 @@ export default {
     extra: defaultThemeVariables.color.beigePale,
     active: defaultThemeVariables.color.blackLighter,
     landing: defaultThemeVariables.color.beigePaleLight,
+    green: defaultThemeVariables.color.green,
   },
   borderRadius: defaultThemeVariables.borderRadius,
   fontWeight: {
@@ -56,6 +57,7 @@ export default {
       secondaryHover: defaultThemeVariables.color.grey,
       secondaryLight: defaultThemeVariables.color.beigePale,
       secondaryLightHover: defaultThemeVariables.color.beigePaleLight,
+      success: defaultThemeVariables.color.green,
     },
     textColor: {
       primary: defaultThemeVariables.color.white,
@@ -68,6 +70,7 @@ export default {
   margins: {
     base: defaultThemeVariables.margins.base,
     big: defaultThemeVariables.margins.big,
+    small: defaultThemeVariables.margins.small,
   },
   form: {
     labelColor: {
@@ -77,7 +80,7 @@ export default {
       success: defaultThemeVariables.color.greyDark,
     },
     bgColor: {
-      base: defaultThemeVariables.color.white,
+      base: defaultThemeVariables.color.black,
       active: defaultThemeVariables.color.orange,
       dropdownElementHover: defaultThemeVariables.color.beigePale,
     },
@@ -104,4 +107,5 @@ export default {
     highest: defaultThemeVariables.zIndex.zIndexHighest,
   },
   padding: defaultThemeVariables.padding,
+  border: defaultThemeVariables.border,
 }

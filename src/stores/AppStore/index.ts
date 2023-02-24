@@ -1,19 +1,20 @@
 import * as mobx from 'mobx'
 
-class AppStore {
-  @mobx.observable isLoading = true
+import Store from 'stores/Store'
+import AuthStore from 'stores/AuthStore'
+import UserStore from 'stores/UserStore'
+
+class AppStore extends Store {
+  @mobx.observable authStore: AuthStore
+  @mobx.observable userStore: UserStore
 
   constructor() {
-    mobx.makeAutoObservable(this)
+    super()
+    mobx.makeObservable(this)
 
-    setTimeout(() => {
-      this.setIsLoading(false)
-    }, 5000)
-  }
-
-  @mobx.action setIsLoading = (isLoading: boolean) => {
-    this.isLoading = isLoading
+    this.authStore = new AuthStore(this)
+    this.userStore = new UserStore(this)
   }
 }
 
-export default new AppStore()
+export default AppStore

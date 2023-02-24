@@ -24,13 +24,12 @@
       "jest",
       "styled-components-react-native"
     ],
-    "experimentalDecorators": true,
-    "useDefineForClassFields": true,
-    "paths": {
-      "~/*": [
-        "src/"
-      ]
-    }
+    "experimentalDecorators": true
+  },
+  "paths": {
+    "~/*": [
+      "src/"
+    ]
   },
   "include": [
     "src/**/*ts",

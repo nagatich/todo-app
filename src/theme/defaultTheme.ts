@@ -57,6 +57,7 @@ export default {
       secondaryHover: defaultThemeVariables.color.grey,
       secondaryLight: defaultThemeVariables.color.beigePale,
       secondaryLightHover: defaultThemeVariables.color.beigePaleLight,
+      success: defaultThemeVariables.color.green,
     },
     textColor: {
       primary: defaultThemeVariables.color.white,
@@ -106,4 +107,5 @@ export default {
     highest: defaultThemeVariables.zIndex.zIndexHighest,
   },
   padding: defaultThemeVariables.padding,
+  border: defaultThemeVariables.border,
 }
